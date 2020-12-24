@@ -1,0 +1,14 @@
+FOR i = 1 TO 100
+	LET SHOW$ = ""
+	IF MOD(i,3) = 0 THEN
+		LET SHOW$ = SHOW$ + "Fizz"
+	END IF
+	IF MOD(i,5) = 0 THEN
+		LET SHOW$ = SHOW$ + "Buzz"
+	END IF
+	IF SHOW$ = "" THEN
+		LET SHOW$ = STR$(i)
+	END IF
+ 
+	PRINT SHOW$;" ";
+NEXT

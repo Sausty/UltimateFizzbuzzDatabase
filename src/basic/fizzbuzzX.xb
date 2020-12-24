@@ -1,0 +1,21 @@
+PROGRAM "fizzbuzz"
+VERSION "0.0001"
+ 
+DECLARE FUNCTION Entry()
+ 
+FUNCTION Entry()
+  FOR i% = 1 TO 100
+    SELECT CASE TRUE
+      CASE i% MOD 15 = 0:
+        PRINT "FizzBuzz"
+      CASE i% MOD 3 = 0:
+        PRINT "Fizz"
+      CASE i% MOD 5 = 0:
+        PRINT "Buzz"
+      CASE ELSE:
+        PRINT i%
+    END SELECT
+  NEXT i%
+END FUNCTION
+ 
+END PROGRAM

@@ -1,0 +1,7 @@
+' FizzBuzz
+FOR i = 1 TO 100
+    msg$ = IIF$(MOD(i, 3), "", "Fizz")
+    msg$ = msg$ & IIF$(MOD(i, 5), "", "Buzz")
+    PRINT IIF$(msg$ = "", STR$(i), msg$), " ";
+NEXT
+PRINT

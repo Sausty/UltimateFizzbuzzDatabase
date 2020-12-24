@@ -1,0 +1,6 @@
+10 FOR N = 1 TO 100
+20     OP$ = ""
+30     IF N MOD 3 = 0 THEN OP$ = "Fizz"
+40     IF N MOD 5 = 0 THEN OP$ = OP$ + "Buzz"
+50     IF OP$ = "" THEN PRINT N ELSE PRINT OP$
+60 NEXT N
